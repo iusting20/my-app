@@ -1,14 +1,25 @@
-<p>hello-world works!</p>
+<p>
+  hello-world works!
+  <br />
+  {{ message }}
+</p>
+
+<h1>Developed by {{ devName }}</h1>
+
 <div>
-  <a href="https://google.com">
-    <ul>
-      <a href="https://google.com"><li>This is Google</li></a>
-      <a href="https://google.com"><li>This is Google again</li></a>
-      <a href="https://google.com"><li>and This is Google</li></a>
-      <a href="https://google.com"><li>and again</li></a>
-      <a href="https://google.com"><li>and another one!</li></a>
-    </ul>
-  </a>
+  <ul>
+    <a href="https://google.com"><li>This is Google</li></a>
+    <a href="https://google.com"><li>This is Google again</li></a>
+    <a href="https://google.com"><li>and This is Google</li></a>
+    <a href="https://google.com"><li>and again</li></a>
+    <a href="https://google.com"><li>and another one!</li></a>
+  </ul>
+  <button (click)="sayHello()">Greet me!</button>
+  <br />
+  <a [href]="siteUrl"> {{ siteUrl }} </a>
+  <br /><br />
+  <input type="text" [(ngModel)]="dynamicSiteUrl" />
+  <a [href]="dynamicSiteUrl"> {{ dynamicSiteUrl }} </a>
 </div>
 
 <br />
